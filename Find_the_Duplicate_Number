@@ -1,0 +1,58 @@
+class Solution {
+public:
+    int findDuplicate(vector<int>& nums) 
+        
+        //My Method
+        
+        // long long int i=0,j=0,result=0;
+        // for(i=0;i<nums.size();i++){
+        //     for(j=i+1;i<nums.size();j++){
+        //         if(nums[i] == nums[j]){
+        //             result = nums[i];
+        //             return result;
+        //         }
+        //     }
+        // }
+        // return -1;
+        
+        // Method 1
+        
+        // sort(nums.begin(),nums.end());
+        // for( int i=0;i<nums.size();i++){
+        //     if(nums[i] == nums[i+1]){
+        //         return nums[i];
+        //     }
+        // }
+        // return -1;
+        
+        // Method 2
+        
+        // unordered_set<int> present;
+        // for(int i=0;i<nums.size();i++){
+        //     if(present.count(nums[i])){
+        //         return nums[i];
+        //     }
+        //     else{present.insert(nums[i]);}
+        // }
+        //     return -1;
+        
+        // Method 3
+        
+        // int duplicate = -1;
+        // for(int i=0;i<nums.size();i++){
+        //     int cur = abs(nums[i]);
+        //     if(nums[cur] < 0){
+        //         duplicate = cur;
+        //         break;
+        //     }
+        //     nums[cur] *= -1;
+        // }
+        // for(auto &num:nums){
+        //     num = abs(nums);
+        // }
+        // return duplicate;
+        
+        // Method 4
+        
+    }
+};
