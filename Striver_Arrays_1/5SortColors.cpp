@@ -64,6 +64,7 @@ vector<int> Optimised(vector<int> nums)
             high--;
         }
     }
+    return nums;
 }
 
 int main()
@@ -77,6 +78,10 @@ int main()
         cin >> element;
         nums.push_back(element);
     }
-
+    vector<int> ans = Optimised(nums);
+    for (auto i : nums)
+    {
+        cout << i << " ";
+    }
     return 0;
 }
