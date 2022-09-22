@@ -12,6 +12,20 @@ using namespace std;
 // TC : O(N^2)
 // SC : O(1)
 
+vector<vector<int>> RotateWithExtraSpace(vector<vector<int>> v)
+{
+    int n = v.size();
+    vector<vector<int>> rotated(n, vector<int>(n, 0));
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = n - 1; j >= 0; j--)
+        {
+            rotated[i][n - j - 1] = v[j][i];
+        }
+    }
+    return rotated;
+}
+
 vector<vector<int>> RotateMatrix(vector<vector<int>> matrix)
 {
     int n = matrix.size();
