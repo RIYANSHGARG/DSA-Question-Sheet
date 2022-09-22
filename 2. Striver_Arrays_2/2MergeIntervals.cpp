@@ -24,7 +24,6 @@ vector<vector<int>> ans(vector<vector<int>> intervals)
     merged.push_back(p);
     return merged;
 }
-}
 
 int main()
 {
