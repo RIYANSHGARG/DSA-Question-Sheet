@@ -37,6 +37,7 @@ bool Find(vector<vector<int>> &matrix, int target)
     return ans;
 }
 
+// best Approach if matrix is sorted row wise and col wose but not as a whole 2d wise
 bool BetterApproach(vector<vector<int>> &matrix, int target)
 {
     bool ans = false;
@@ -60,6 +61,7 @@ bool BetterApproach(vector<vector<int>> &matrix, int target)
     return ans;
 }
 
+// Best Approach if the array is sorted as a whole 2d matrix
 // Binary Search without making it a linear array to find index (X/col , x%col;)
 bool BestApproach(vector<vector<int>> &matrix, int target)
 {
