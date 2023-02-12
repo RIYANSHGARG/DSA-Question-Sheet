@@ -7,10 +7,11 @@ int p(int var, int power)
 {
     if (power == 0)
         return 1;
-    else if (power % 2 == 0)
-        return p(var, power / 2) * p(var, power / 2);
+    int temp = p(var, power / 2);
+    if (power % 2 == 0)
+        return temp * temp;
     else
-        return p(var, power / 2) * p(var, power / 2) * var;
+        return temp * temp * var;
 }
 
 int main()
